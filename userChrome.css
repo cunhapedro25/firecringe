@@ -1,0 +1,20 @@
+/* ############# Required files ############## */
+/* coment/uncoment  to enable/disable*/
+
+@import url('components/window_control_placeholder_support.css');
+/* @import url('components/mica_support.css'); */
+@import url('components/hide_alltabs_button.css');
+/* @import url('components/autohide_bookmarks_and_main_toolbars.css'); */
+@import url('components/urlbar_centered_text.css');
+@import url('components/round_caption_buttons.css');
+@import url('components/toolbars.css');
+/* @import url('components/vivaldifox.css'); */
+@import url('components/adaptative_tab_bar_color.css');
+
+
+/* ############# Personal Settings ############## */
+#navigator-toolbox{--uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.1s */}
+:root{
+   --general-border-radius: 12px !important;
+   --auto-general-color: var(--lwt-accent-color) !important;
+}
