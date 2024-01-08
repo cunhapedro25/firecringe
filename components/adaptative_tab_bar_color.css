@@ -1,6 +1,0 @@
-@media (prefers-color-scheme: dark){ :root{
-    --auto-accent-color: color-mix(in srgb, var(--auto-general-color) 86%, white);
-}}
- @media (prefers-color-scheme: light){ :root{
-    --auto-accent-color: rgb(80, 80, 80);
-}}
