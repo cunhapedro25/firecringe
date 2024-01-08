@@ -1,20 +1,71 @@
 /* ############# Required files ############## */
-/* coment/uncoment  to enable/disable*/
-
-@import url('components/window_control_placeholder_support.css');
-/* @import url('components/mica_support.css'); */
-@import url('components/hide_alltabs_button.css');
-/* @import url('components/autohide_bookmarks_and_main_toolbars.css'); */
-@import url('components/urlbar_centered_text.css');
-@import url('components/round_caption_buttons.css');
+@import url('components/browser.css');
+@import url('components/sidebar.css');
 @import url('components/toolbars.css');
-/* @import url('components/vivaldifox.css'); */
-@import url('components/adaptative_tab_bar_color.css');
+@import url('components/urlbar.css');
+@import url('components/titlebar_buttons.css');
 
 
-/* ############# Personal Settings ############## */
-#navigator-toolbox{--uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.1s */}
+
+
+/* ############# Optional files ############## */
+/* For making urlbar text centered */
+/* @import url('components/urlbar_centered_text.css'); */
+
+
+/* For making main toolbar (urlbar, searchbar, etc) appear and dissapear with mouse */
+/* @import url('components/autohide_bookmarks_and_main_toolbars.css'); */
+
+
+/* if using a sidebar tab manager - remove tabs toolbar (you still need the top files uncommented) */
+@import url('components/sidebar_tab_manager/window_control_placeholder_support.css');
+@import url('components/sidebar_tab_manager/toolbars.css');
+
+/* for transparent background - only works if outside padding is bigger than 1px */
+/* @import url('components/transparent-background.css'); */
+
+/* ############# Colors and other settings ############## */
+@media (prefers-color-scheme: dark){ :root{
+   --auto-accent-color: color-mix(in srgb, var(--auto-general-color) 86%, white);
+}}
+@media (prefers-color-scheme: light){ :root{
+   --auto-accent-color: color-mix(in srgb, var(--auto-general-color) 86%, black);
+}}
+
 :root{
-   --general-border-radius: 12px !important;
+   /* Space between toolbars and browser, or toolbars and edge of the screen */
+   --outside-padding-margin: 6px;
+
+   /* For like the bropwser container, or like the sidebar rounded corners */
+   --outside-border-radius: 12px;
+
+   /* Space between toolbars (tabstoolbar and urlbar) */
+   --margin-between-toolbars: 2px;
+
+   /* Space between urlbar and browser */
+   --margin-between-urlbar-and-browser: 6px;
+   --margin-between-titlebar-and-browser: 2px;   /* only used when no urlbar ( autohide_bookmarks_and_main_toolbars is uncommented ) */
+
+   /* For the space between the browser and the sidebars recommended to be 6 or more */
+   --margin-between-containers: 6px;
+
+   /* For buttons, inputs, etc */
+   --inside-border-radius: 12px;
+
    --auto-general-color: var(--lwt-accent-color) !important;
+}
+
+:root:is([sizemode="maximized"]) {
+   --browser-padding: 0px var(--outside-padding-margin) var(--outside-padding-margin) var(--outside-padding-margin);
+   --browser-radius: var(--outside-border-radius);
+}
+
+:root:is([sizemode="fullscreen"]) {
+   --browser-padding: var(--outside-padding-margin);
+   --browser-radius: var(--outside-border-radius);
+}
+
+:root:is([inDOMFullscreen="true"]) {
+   --browser-padding: 0;
+   --browser-radius: 0;
 }
