@@ -1,0 +1,27 @@
+.titlebar-buttonbox {
+  appearance: unset !important;
+}
+
+.titlebar-button{
+  --uc-caption-background: var(--uc-caption-color);
+  background: transparent !important;
+  transition: opacity 0.2s ease;
+
+  height: 44px !important;
+  padding: 8px !important;
+  border-radius: 0 !important;
+}
+
+.titlebar-button { --uc-caption-color: rgba(252,255,255,.2) }
+.titlebar-min    { --uc-caption-color: rgba(252,255,255,.2) }
+.titlebar-close  { --uc-caption-color: rgb(250, 55, 55) }
+
+.titlebar-button:hover {
+  opacity: 1;
+  background-color: var(--uc-caption-background,currentColor) !important;
+}
+
+.titlebar-button > .toolbarbutton-icon:hover {
+	list-style-image: none;
+  background: var(--uc-caption-background,currentColor) !important;
+}
