@@ -1,0 +1,35 @@
+.browserContainer, .browserStack, .browserSidebarContainer, #browser, #appcontent{
+  background-color: var(--auto-accent-color) !important;
+  /* for debug only */
+  /* margin: 50px !important;   */
+  /* border-radius: 8px !important; */
+}
+
+#browser{
+  padding: var(--browser-padding) !important;
+}
+
+#customization-container {
+  padding: var(--browser-padding) !important;
+  background-color: var(--auto-accent-color) !important;
+  background-image: none !important;
+}
+
+#customization-content-container{
+  border-radius: var(--browser-radius) var(--browser-radius) 0 0 !important;
+  background-color: var(--auto-general-color) !important;
+}
+
+#customization-footer{
+  border-radius: 0 0 var(--browser-radius) var(--browser-radius) !important;
+  background-color: var(--auto-general-color) !important;
+}
+
+.browserStack>browser{
+  border-radius: var(--browser-radius) !important;
+  overflow: hidden !important;
+}
+
+#tabbrowser-tabpanels {
+  background-color: transparent !important;
+}

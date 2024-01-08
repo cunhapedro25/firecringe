@@ -1,92 +1,23 @@
-/*  --------------------------------------- Rounded corner in pages --------------------------------------- */
-:root:is([sizemode="maximized"]) {
-    --browser-padding: 0px 6px 6px 6px;
-    --browser-radius: var(--general-border-radius);
-}
-
-:root:is([sizemode="fullscreen"]) {
-    --browser-padding: 6px 6px 6px 6px;
-    --browser-radius: var(--general-border-radius);
-}
-
-:root:is([inDOMFullscreen="true"]) {
-    --browser-padding: 0;
-    --browser-radius: 0;
-}
-
-#browser{
-    padding: var(--browser-padding) !important;
-}
-
-.browserStack>browser{
-    border-radius: var(--browser-radius) !important;
-}
-
-findbar{
-    border-radius: 8px !important;
-    z-index: 2;
-    margin: 0 6px 6px !important;
-}
-#tabbrowser-tabpanels {
-    background-color: transparent !important;
-
-}
-#sidebar-box {
-    border-radius: var(--general-border-radius) !important;
-    border-color: transparent;
-    background-color: var(--auto-general-color) !important;
-    overflow: hidden !important;
-}
-
-.sidebar-splitter{
-    width: 6px !important;
-    background-color: var(--auto-accent-color) !important;
-    border-color: var(--auto-accent-color) !important;
-    margin-inline-start: 0px !important;
-}
-
-#browser {
-    --sidebar-border-color: transparent !important;
-}
-
-.browserContainer, .browserStack, .browserSidebarContainer, #browser, #appcontent{
-    background-color: var(--auto-accent-color) !important;
-    /* for debug only */
-    /* margin: 50px !important;   */
-    /* border-radius: 8px !important; */
-}
 #navigator-toolbox, #navigator-toolbox-background{
+    background-color: var(--auto-accent-color)  !important;
     border-color: var(--auto-accent-color) !important;
-    background-color: var(--auto-accent-color) !important;
-}
-
-#titlebar{
-    z-index: 99;
+    box-shadow: 2px var(--auto-accent-color);
 }
 
 #TabsToolbar {
-    position: absolute;
-    right: 4px;
-    top: 6px;
-    /* margin: 6px 6px 1px 6px !important; */
-    /* border-radius: var(--general-border-radius) var(--general-border-radius) 0 0 !important; */
-    /* background-color: var(--auto-general-color) !important; */
-    background-color: transparent !important;  /* this will make tabs toolbar transparent coment above line too*/
-}
-
-#TabsToolbar .toolbar-items, #TabsToolbar .titlebar-spacer, #TabsToolbar #private-browsing-indicator-with-label {
-    display: none !important;
-}
-
-
-#TabsToolbar toolbarbutton{
-    height: 39px !important;
+    margin: var(--outside-padding-margin) !important;
+    margin-bottom: var(--margin-between-toolbars) !important;
+    border-radius: var(--outside-border-radius) var(--outside-border-radius) 0 0 !important;
+    background-color: var(--auto-general-color) !important;
+    overflow: hidden !important;
+    padding: 0 !important;
 }
 
 /* Nav-bar */
 .browser-toolbar:not(.titlebar-color) {
-    margin: 6px 6px 6px 6px !important;
-    border-radius: var(--general-border-radius) !important;
+    margin: var(--outside-padding-margin) !important;
+    margin-top: 0px !important;
+    margin-bottom: var(--margin-between-urlbar-and-browser) !important;
+    border-radius: 0 0 var(--outside-border-radius) var(--outside-border-radius) !important;
     background-color: var(--auto-general-color) !important;
-    box-shadow: 6px;
 }

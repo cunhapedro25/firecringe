@@ -2,8 +2,11 @@
 See the above repository for updates as well as full license text. */
 
 
-#urlbar-background { border-radius: var(--general-border-radius) !important;}
+#urlbar-background { border-radius: var(--inside-border-radius) !important;}
 
 #urlbar:not([focused]) #urlbar-input, /* ID for Firefox 70 */
 #urlbar:not([focused]) .urlbar-input{ text-align: center !important; }
 #urlbar:is([focused]) .urlbar-input{ text-align: center !important; }
+
+#urlbar:is([focused]) .urlbar-input{ text-align: center !important; }
+
