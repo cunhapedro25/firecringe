@@ -10,7 +10,7 @@
 
 /* ############# Optional files ############## */
 /* For making urlbar text centered */
-/* @import url('components/urlbar_centered_text.css'); */
+@import url('components/urlbar_centered_text.css');
 
 
 /* For making main toolbar (urlbar, searchbar, etc) appear and dissapear with mouse */
