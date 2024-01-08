@@ -1,0 +1,31 @@
+/* Make TabsToolbar dissapear (except buttons) and makes main toolbar completly rounded */
+
+#titlebar{
+    z-index: 99;
+}
+
+#TabsToolbar {
+    position: absolute;
+    right: var(--outside-padding-margin);
+    top: var(--outside-padding-margin);
+
+    background-color: transparent !important;
+    border-radius: 0 var(--outside-border-radius) var(--outside-border-radius) 0 !important;
+    margin: 0 !important;
+}
+
+#TabsToolbar .toolbar-items, #TabsToolbar .titlebar-spacer, #TabsToolbar #private-browsing-indicator-with-label {
+    display: none !important;
+}
+
+.titlebar-button {
+    height: 40px !important;
+    border-radius: 0;
+}
+
+/* Nav-bar */
+.browser-toolbar:not(.titlebar-color) {
+    margin-top: var(--outside-padding-margin) !important;
+    border-radius: var(--outside-border-radius) !important;
+    background-color: var(--auto-general-color) !important;
+}
