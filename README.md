@@ -35,3 +35,6 @@ Normal firefoxe:
 
 With sidebar tab manager:
 ![firecringe-1](https://github.com/CunhaPedro25/firecringe/assets/72658683/8a5fe820-df3d-4c1a-98b0-6a704860fc87)
+
+
+\* This README and repo description are bad, i know, no need to tell me, and its also a very funny joke, please laugh. NOW!
