@@ -15,6 +15,11 @@
   background-color: transparent !important;
   appearance: -moz-win-borderless-glass !important;
 }
-#appcontent, #browser, #tabbrowser-tabbox, #tabbrowser-tabpanels, .browserSidebarContainer {
+#appcontent, #browser, #tabbrowser-tabbox, #tabbrowser-tabpanels, #navigator-toolbox, #navigator-toolbox-background
+.browserSidebarContainer, .browserContainer, .browserStack, .sidebar-splitter{
   background-color: transparent !important;
+  border-color: transparent !important;
+}
+#sidebar-box {
+  border-color: transparent !important;
 }
