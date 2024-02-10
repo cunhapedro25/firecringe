@@ -13,8 +13,8 @@
 @import url('components/urlbar_centered_text.css');
 
 
-/* Remove sidebar header */
-@import url('components/remove_sidebar_header.css');
+/* Remove any sidebar header to make it more clean*/
+/* @import url('components/remove_sidebar_header.css'); */
 
 
 /* For making main toolbar (urlbar, searchbar, etc) appear and dissapear with mouse */
