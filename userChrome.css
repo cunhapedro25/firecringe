@@ -13,16 +13,22 @@
 @import url('components/urlbar_centered_text.css');
 
 
+/* Remove sidebar header */
+@import url('components/remove_sidebar_header.css');
+
+
 /* For making main toolbar (urlbar, searchbar, etc) appear and dissapear with mouse */
 /* @import url('components/autohide_bookmarks_and_main_toolbars.css'); */
 
 
 /* if using a sidebar tab manager - remove tabs toolbar (you still need the top files uncommented) */
-@import url('components/sidebar_tab_manager/window_control_placeholder_support.css');
-@import url('components/sidebar_tab_manager/toolbars.css');
+@import url('components/remove_tabs/toolbars.css');
+@import url('components/remove_tabs/toolbars.css');
+
 
 /* for transparent background - only works if outside padding is bigger than 1px */
 /* @import url('components/transparent-background.css'); */
+
 
 /* ############# Colors and other settings ############## */
 @media (prefers-color-scheme: dark){ :root{
@@ -34,23 +40,23 @@
 
 :root{
    /* Space between toolbars and browser, or toolbars and edge of the screen */
-   --outside-padding-margin: 6px;
+   --outside-padding-margin: 0.5rem;
 
    /* For like the bropwser container, or like the sidebar rounded corners */
-   --outside-border-radius: 12px;
+   --outside-border-radius: 0.5rem;
 
    /* Space between toolbars (tabstoolbar and urlbar) */
-   --margin-between-toolbars: 2px;
+   --margin-between-toolbars: 0.16rem;
 
    /* Space between urlbar and browser */
-   --margin-between-urlbar-and-browser: 6px;
-   --margin-between-titlebar-and-browser: 2px;   /* only used when no urlbar ( autohide_bookmarks_and_main_toolbars is uncommented ) */
+   --margin-between-urlbar-and-browser: 0.5rem;
+   --margin-between-titlebar-and-browser: 0.16rem;   /* only used when no urlbar ( autohide_bookmarks_and_main_toolbars is uncommented ) */
 
    /* For the space between the browser and the sidebars recommended to be 6 or more */
-   --margin-between-containers: 6px;
+   --margin-between-containers: 0.5rem;
 
    /* For buttons, inputs, etc */
-   --inside-border-radius: 12px;
+   --inside-border-radius: 1rem;
 
    --auto-general-color: var(--lwt-accent-color) !important;
 }
