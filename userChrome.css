@@ -23,7 +23,7 @@
 
 /* if using a sidebar tab manager - remove tabs toolbar (you still need the top files uncommented) */
 @import url('components/remove_tabs/toolbars.css');
-@import url('components/remove_tabs/toolbars.css');
+@import url('components/remove_tabs/window_control_placeholder_support.css');
 
 
 /* for transparent background - only works if outside padding is bigger than 1px */
