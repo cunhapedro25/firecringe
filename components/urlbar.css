@@ -9,3 +9,13 @@
   background-color: color-mix(in srgb, var(--auto-accent-color) 30%, var(--auto-general-color)) !important;
   border-radius: var(--inside-border-radius) !important;
 }
+
+.urlbarView-row[selected] .urlbarView-row-inner {
+  background-color: var(--auto-accent-color) !important;
+  border-radius: 0.3rem !important;
+}
+
+.searchbar-engine-one-off-item[selected] {
+  background-color: var(--auto-accent-color) !important;
+  border-radius: 0.3rem !important;
+}

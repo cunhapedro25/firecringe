@@ -4,6 +4,10 @@
     box-shadow: 2px var(--auto-accent-color);
 }
 
+#navigator-toolbox {
+    border: none !important;
+}
+
 #TabsToolbar {
     margin: var(--outside-padding-margin) !important;
     margin-bottom: var(--margin-between-toolbars) !important;
