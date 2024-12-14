@@ -4,10 +4,15 @@
     z-index: 99;
 }
 
+#toolbar-menubar{
+    display: none !important;
+}
+
 #TabsToolbar {
     position: absolute;
     right: var(--outside-padding-margin);
     top: var(--outside-padding-margin);
+    z-index: 1;
 
     background-color: transparent !important;
     border-radius: 0 var(--outside-border-radius) var(--outside-border-radius) 0 !important;
