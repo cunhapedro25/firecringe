@@ -1,16 +1,11 @@
 /* ############# Required files ############## */
 @import url('components/browser.css');
-@import url('components/sidebar.css');
-@import url('components/toolbars.css');
-@import url('components/urlbar.css');
-@import url('components/titlebar_buttons.css');
-
-
+@import url('components/toolbar.css');
 
 
 /* ############# Optional files ############## */
 /* For making urlbar text centered */
-@import url('components/urlbar_centered_text.css');
+/* @import url('components/urlbar_centered_text.css'); */
 
 
 /* Remove any sidebar header to make it more clean*/
@@ -25,17 +20,11 @@
 /* @import url('components/remove_tabs/toolbars.css');
 @import url('components/remove_tabs/window_control_placeholder_support.css'); */
 
-
-/* for transparent background - only works if outside padding is bigger than 1px */
-/* @import url('components/transparent-background.css'); */
-
-
-/* ############# Colors and other settings ############## */
 @media (prefers-color-scheme: dark){ :root{
-   --auto-accent-color: color-mix(in srgb, var(--auto-general-color) 86%, white);
+   --accent-color: color-mix(in srgb, var(--toolbar-bgcolor) 86%, white);
 }}
 @media (prefers-color-scheme: light){ :root{
-   --auto-accent-color: color-mix(in srgb, var(--auto-general-color) 86%, black);
+   --accent-color: color-mix(in srgb, var(--toolbar-bgcolor) 86%, black);
 }}
 
 :root{
@@ -45,33 +34,30 @@
    /* For like the bropwser container, or like the sidebar rounded corners */
    --outside-border-radius: 0.5rem;
 
-   /* Space between toolbars (tabstoolbar and urlbar) */
-   --margin-between-toolbars: 0.16rem;
-
    /* Space between urlbar and browser */
-   --margin-between-urlbar-and-browser: 0.5rem;
-   --margin-between-titlebar-and-browser: 0.16rem;   /* only used when no urlbar ( autohide_bookmarks_and_main_toolbars is uncommented ) */
+   --margin-between-toolbar-and-browser: 0.5rem;
 
    /* For the space between the browser and the sidebars recommended to be 0.2 or more */
    --margin-between-containers: 0.5rem;
 
    /* For buttons, inputs, etc */
    --inside-border-radius: 1rem;
-
-   --auto-general-color: var(--lwt-accent-color) !important;
-}
-
-:root:is([sizemode="maximized"]) {
-   --browser-padding: 0px var(--outside-padding-margin) var(--outside-padding-margin) var(--outside-padding-margin);
-   --browser-radius: var(--outside-border-radius);
-}
-
-:root:is([sizemode="fullscreen"]) {
-   --browser-padding: var(--outside-padding-margin);
-   --browser-radius: var(--outside-border-radius);
 }
 
 :root:is([inDOMFullscreen="true"]) {
-   --browser-padding: 0;
-   --browser-radius: 0;
+   --outside-padding-margin: 0;
+   --outside-border-radius: 0;
+}
+
+html{
+   background-color: var(--accent-color) !important;
+}
+
+#navigator-toolbox{
+   margin: var(--outside-padding-margin);
+   margin-bottom: var(--margin-between-toolbar-and-browser) !important;
+   background-color: transparent;
+   border-radius: var(--outside-border-radius) !important;
+   overflow: hidden !important;
+   border: 0;
 }

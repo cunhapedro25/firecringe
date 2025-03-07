@@ -1,35 +1,51 @@
-.browserContainer, .browserStack, .browserSidebarContainer, #browser, #appcontent{
-  background-color: var(--auto-accent-color) !important;
-  /* for debug only */
-  /* margin: 50px !important;   */
-  /* border-radius: 8px !important; */
-}
-
 #browser{
-  padding: var(--browser-padding) !important;
-}
+    background-color: transparent !important;
+    background-image: none !important;
+    padding: var(--outside-padding-margin) !important;
+    padding-top: 0 !important;
 
-#customization-container {
-  padding: var(--browser-padding) !important;
-  background-color: var(--auto-accent-color) !important;
-  background-image: none !important;
-}
+    #sidebar-main{
+        background-color: var(--toolbar-bgcolor) !important;
+        border-radius: var(--outside-border-radius) !important;
+    }
 
-#customization-content-container{
-  border-radius: var(--browser-radius) var(--browser-radius) 0 0 !important;
-  background-color: var(--auto-general-color) !important;
-}
+    #tabbrowser-tabbox{
+        outline: 0;
+        box-shadow: 0px 0px transparent;
+    }
 
-#customization-footer{
-  border-radius: 0 0 var(--browser-radius) var(--browser-radius) !important;
-  background-color: var(--auto-general-color) !important;
-}
+    #tabbrowser-tabpanels{
+        background-color: transparent !important;
+    }
 
-.browserStack>browser{
-  border-radius: var(--browser-radius) !important;
-  overflow: hidden !important;
-}
+    #sidebar-box,
+    .devtools-toolbox-side-iframe,
+    .devtools-toolbox-bottom-iframe,
+    .browserStack{
+        border-radius: var(--outside-border-radius) !important;
+        overflow: hidden !important;
+    }
 
-#tabbrowser-tabpanels {
-  background-color: transparent !important;
+    .sidebar-splitter,
+    .devtools-side-splitter,
+    .devtools-horizontal-splitter{
+        background-color: transparent !important;
+        border: 1px !important;
+    }
+
+
+    .sidebar-splitter,
+    .devtools-side-splitter{
+        width: var(--margin-between-containers) !important;
+        max-width: var(--margin-between-containers) !important;
+        margin-inline-start: 0 !important;
+        margin-inline-end: 0 !important;
+    }
+
+    .devtools-horizontal-splitter{
+        height: var(--margin-between-containers) !important;
+        max-height: var(--margin-between-containers) !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
 }
