@@ -1,4 +1,4 @@
 /* Remove the sidebar header */
 #sidebar-box #sidebar-header {
-  visibility: collapse;
+    visibility: collapse;
 }

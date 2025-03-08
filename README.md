@@ -5,23 +5,19 @@ Firecringe is a very col costum chorme thing for firefoxs to look prrety
 ### Settings:
 ```css
    /* Space between toolbars and browser, or toolbars and edge of the screen */
-   --outside-padding-margin: 6px;
+   --outside-padding-margin: 0.5rem;
 
    /* For like the bropwser container, or like the sidebar rounded corners */
-   --outside-border-radius: 12px;
-
-   /* Space between toolbars (tabstoolbar and urlbar) */
-   --margin-between-toolbars: 2px;
+   --outside-border-radius: 0.5rem;
 
    /* Space between urlbar and browser */
-   --margin-between-urlbar-and-browser: 6px;
-   --margin-between-titlebar-and-browser: 2px;   /* only used when no urlbar ( autohide_bookmarks_and_main_toolbars is uncommented ) */
+   --margin-between-toolbar-and-browser: 0.5rem;
 
-   /* For the space between the browser and the sidebars recommended to be 6 or more */
-   --margin-between-containers: 6px;
+   /* For the space between the browser and the sidebars recommended to be 0.2 or more */
+   --margin-between-containers: 0.5rem;
 
    /* For buttons, inputs, etc */
-   --inside-border-radius: 12px;
+   --inside-border-radius: 1rem;
 ```
 
 This is all the variables you can modify, very nice!

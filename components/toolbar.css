@@ -1,0 +1,82 @@
+#navigator-toolbox{
+    margin: var(--outside-padding-margin);
+    margin-bottom: var(--margin-between-toolbar-and-browser) !important;
+    border-radius: var(--outside-border-radius) !important;
+    overflow: hidden !important;
+    border: none !important;
+}
+@media (-moz-gtk-csd-available) {
+    .titlebar-button{
+        padding: 0 !important;
+
+        .toolbarbutton-icon{
+            width: 35px !important;
+            height: 100% !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+/* ###### URL BAR ###### */
+@media (prefers-color-scheme: dark) {
+    #urlbar {
+        --toolbar-field-background-color: color-mix(in srgb, var(--toolbar-bgcolor) 95%, white) !important;
+        --toolbar-field-focus-background-color: var(--toolbar-field-background-color) !important;
+    }
+ }
+
+@media (prefers-color-scheme: light) {
+    #urlbar {
+        --toolbar-field-background-color: color-mix(in srgb, var(--toolbar-bgcolor) 90%, black) !important;
+        --toolbar-field-focus-background-color: var(--toolbar-field-background-color) !important;
+    }
+}
+
+#urlbar{
+    --urlbar-box-bgcolor: var(--toolbar-bgcolor) !important;
+    --urlbar-box-focus-bgcolor: var(--toolbar-bgcolor) !important;
+
+    #urlbar-background{
+        border: none !important;
+    }
+}
+
+.urlbarView-row[selected],
+.urlbarView-row:hover {
+    background-color: var(--urlbar-box-focus-bgcolor) !important;
+    border-radius: var(--inside-border-radius) !important;
+}
+
+.searchbar-engine-one-off-item[selected],
+.searchbar-engine-one-off-item:hover {
+    background-color: var(--urlbar-box-focus-bgcolor) !important;
+    border-radius: var(--inside-border-radius) !important;
+}
+
+.urlbarView-button-menu:hover {
+    --background-color: var(--toolbar-field-background-color);
+    background-color: var(--background-color) !important;
+    color: unset !important;
+    border-radius: var(--inside-border-radius) !important;
+}
+
+#urlbar-background, #urlbarView {
+    outline: 0 !important;
+    border-radius: var(--inside-border-radius) !important;
+}
+
+#urlbar-input-container{
+    border-radius: var(--inside-border-radius) !important;
+}
+
+.urlbarView-row[selected] .urlbarView-row-inner {
+    border-radius: var(--inside-border-radius) !important;
+}
+
+.searchbar-engine-one-off-item[selected] {
+    border-radius: var(--inside-border-radius) !important;
+}
+
+#identity-icon-box{
+    border-radius: calc(var(--inside-border-radius) * 0.8) !important;
+}
