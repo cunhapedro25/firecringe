@@ -1,0 +1,43 @@
+#main-window{
+    min-width: 732px !important;
+}
+
+#TabsToolbar{
+    visibility: collapse !important;
+}
+
+#nav-bar{
+    background-color: transparent !important;
+}
+
+#nav-bar .titlebar-buttonbox-container{
+    display: flex !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] #nav-bar .private-browsing-indicator-with-label {
+    display: flex !important;
+
+    .private-browsing-indicator-label{
+        display: none !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #urlbar {
+        --toolbar-field-background-color: color-mix(in srgb, var(--toolbox-bgcolor) 95%, white) !important;
+        --toolbar-field-focus-background-color: var(--toolbar-field-background-color) !important;
+    }
+ }
+
+@media (prefers-color-scheme: light) {
+    #urlbar {
+        --toolbar-field-background-color: color-mix(in srgb, var(--toolbox-bgcolor) 90%, black) !important;
+        --toolbar-field-focus-background-color: color-mix(in srgb, var(--toolbox-bgcolor) 95%, black) !important;
+    }
+}
+
+#urlbar{
+    --urlbar-box-bgcolor: var(--toolbox-bgcolor) !important;
+    --urlbar-box-focus-bgcolor: var(--toolbox-bgcolor) !important;
+}
+

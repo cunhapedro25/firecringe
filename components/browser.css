@@ -5,17 +5,29 @@
     padding-top: 0 !important;
 
     #sidebar-main{
-        background-color: var(--toolbar-bgcolor) !important;
+        background-color: var(--sidebar-background-color) !important;
         border-radius: var(--outside-border-radius) !important;
+        overflow: hidden !important;
+    }
+
+    &:not(.browser-toolbox-background){
+        #sidebar-main{
+            margin-right: var(--outside-padding-margin) !important;
+        }
     }
 
     #tabbrowser-tabbox{
-        outline: 0;
-        box-shadow: 0px 0px transparent;
+        outline: none !important;
+        box-shadow: none !important;
     }
 
     #tabbrowser-tabpanels{
         background-color: transparent !important;
+    }
+
+    .browserContainer{
+        border-radius: var(--outside-border-radius) !important;
+        overflow: hidden !important;
     }
 
     #sidebar-box,
@@ -47,5 +59,11 @@
         max-height: var(--margin-between-containers) !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
+    }
+}
+
+#sidebar-box{
+    @media (-moz-bool-pref: "sidebar.revamp") {
+        padding: 0 !important;
     }
 }
