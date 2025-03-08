@@ -5,17 +5,17 @@
     overflow: hidden !important;
     border: none !important;
 }
+@media (-moz-gtk-csd-available) {
+    .titlebar-button{
+        padding: 0 !important;
 
-.titlebar-button{
-    padding: 0 !important;
-
-    .toolbarbutton-icon{
-        width: 35px !important;
-        height: 100% !important;
-        border-radius: 0 !important;
+        .toolbarbutton-icon{
+            width: 35px !important;
+            height: 100% !important;
+            border-radius: 0 !important;
+        }
     }
 }
-
 
 /* ###### URL BAR ###### */
 @media (prefers-color-scheme: dark) {
