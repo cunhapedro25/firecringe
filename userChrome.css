@@ -5,14 +5,14 @@
 
 /* ############# Optional files ############## */
 /* For making urlbar text centered */
-@import url('components/optional/urlbar_centered_text.css');
+/* @import url('components/optional/urlbar_centered_text.css'); */
 
 
 /* Remove any sidebar header to make it more clean*/
-@import url('components/optional/remove-sidebar-header.css');
+/* @import url('components/optional/remove-sidebar-header.css'); */
 
 /* if using a sidebar tab manager (ex. Sidebery) - remove tabs toolbar - NOT NEEDED IF USING NATIVE VERTICAL TABS */
-@import url('components/optional/remove-tabs.css');
+/* @import url('components/optional/remove-tabs.css'); */
 
 
 
