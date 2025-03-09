@@ -5,6 +5,12 @@
     overflow: hidden !important;
     border: none !important;
 }
+
+:root[chromehidden~="location"] {
+    #navigator-toolbox{
+        margin: 0 !important;
+    }
+}
 @media (-moz-gtk-csd-available) {
     .titlebar-button{
         padding: 0 !important;

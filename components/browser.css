@@ -67,3 +67,17 @@
         padding: 0 !important;
     }
 }
+
+:root[chromehidden~="location"] {
+    #browser{
+        padding: 0 !important;
+
+        .browserContainer{
+            border-radius: 0 !important;
+        }
+
+        .browserStack{
+            border-radius: 0 !important;
+        }
+    }
+}
