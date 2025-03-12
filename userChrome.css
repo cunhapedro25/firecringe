@@ -19,13 +19,13 @@
 /* ############# Theme variables ############## */
 @media (prefers-color-scheme: dark) {
    :root {
-     --accent-color: rgb(from color-mix(in srgb, var(--toolbar-bgcolor) 95%, white) r g b / 100%);
+     --accent-color: rgb(from color-mix(in srgb, var(--lwt-accent-color) 85%, white) r g b / 100%);
    }
 }
 
 @media (prefers-color-scheme: light) {
    :root {
-     --accent-color: rgb(from color-mix(in srgb, var(--toolbar-bgcolor) 75%, black) r g b / 100%);
+     --accent-color: rgb(from color-mix(in srgb, var(--lwt-accent-color) 75%, black) r g b / 100%);
    }
 }
 

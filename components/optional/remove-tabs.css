@@ -12,6 +12,7 @@
 
 #nav-bar{
     background-color: transparent !important;
+    color: inherit;
 }
 
 #nav-bar .titlebar-buttonbox-container{
@@ -25,23 +26,3 @@
         display: none !important;
     }
 }
-
-@media (prefers-color-scheme: dark) {
-    #urlbar {
-        --toolbar-field-background-color: color-mix(in srgb, var(--toolbox-bgcolor) 95%, white) !important;
-        --toolbar-field-focus-background-color: var(--toolbar-field-background-color) !important;
-    }
- }
-
-@media (prefers-color-scheme: light) {
-    #urlbar {
-        --toolbar-field-background-color: color-mix(in srgb, var(--toolbox-bgcolor) 90%, black) !important;
-        --toolbar-field-focus-background-color: color-mix(in srgb, var(--toolbox-bgcolor) 95%, black) !important;
-    }
-}
-
-#urlbar{
-    --urlbar-box-bgcolor: var(--toolbox-bgcolor) !important;
-    --urlbar-box-focus-bgcolor: var(--toolbox-bgcolor) !important;
-}
-

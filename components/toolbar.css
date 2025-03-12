@@ -24,45 +24,17 @@
 }
 
 /* ###### URL BAR ###### */
-@media (prefers-color-scheme: dark) {
-    #urlbar {
-        --toolbar-field-background-color: color-mix(in srgb, var(--toolbar-bgcolor) 95%, white) !important;
-        --toolbar-field-focus-background-color: var(--toolbar-field-background-color) !important;
-    }
- }
-
-@media (prefers-color-scheme: light) {
-    #urlbar {
-        --toolbar-field-background-color: color-mix(in srgb, var(--toolbar-bgcolor) 90%, black) !important;
-        --toolbar-field-focus-background-color: var(--toolbar-field-background-color) !important;
-    }
-}
-
-#urlbar{
-    --urlbar-box-bgcolor: var(--toolbar-bgcolor) !important;
-    --urlbar-box-focus-bgcolor: var(--toolbar-bgcolor) !important;
-
-    #urlbar-background{
-        border: none !important;
-    }
-}
-
 .urlbarView-row[selected],
 .urlbarView-row:hover {
-    background-color: var(--urlbar-box-focus-bgcolor) !important;
     border-radius: var(--inside-border-radius) !important;
 }
 
 .searchbar-engine-one-off-item[selected],
 .searchbar-engine-one-off-item:hover {
-    background-color: var(--urlbar-box-focus-bgcolor) !important;
     border-radius: var(--inside-border-radius) !important;
 }
 
 .urlbarView-button-menu:hover {
-    --background-color: var(--toolbar-field-background-color);
-    background-color: var(--background-color) !important;
-    color: unset !important;
     border-radius: var(--inside-border-radius) !important;
 }
 
